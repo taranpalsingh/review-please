@@ -1,0 +1,58 @@
+<div class="request-review-form">
+
+
+  <div class="form">
+    <p>Please fill the following form to tell our experts more about your requirement.</p>
+
+    <div class="categories-row">
+      <div class="category-selection">
+        <mat-form-field appearance="fill">
+          <mat-label>Category</mat-label>
+          <mat-select [(ngModel)]="selectedCategory" name="category">
+            <mat-option 
+              *ngFor="let category of categories" 
+              [value]="category.value" 
+              [disabled]="category.disabled"
+              (click)="categoryUpdated()">
+              {{category.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p> Selected: {{selectedCategory}} </p>  
+      </div>
+      
+      <div class="sub-category-selection">
+        <mat-form-field appearance="fill">
+          <mat-label>Sub Category</mat-label>
+          <mat-select [(ngModel)]="selectedSubCategory" name="subCategory">
+            <mat-option 
+              *ngFor="let subCategory of subCategories" 
+              [value]="subCategory.value"
+              [disabled]="subCategory.disabled">
+              {{subCategory.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p> Selected sub: {{selectedSubCategory}} </p>  
+      </div>
+    </div>
+
+    <div class="title">
+      <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input matInput [(ngModel)]="title">
+      </mat-form-field>
+    </div>
+
+    <div class="description">
+      <mat-form-field appearance="fill">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput [(ngModel)]="description"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button mat-button type="button" class="btn btn-primary" (click)="onCancel()">Discard</button>
+    <button mat-button type="button" class="btn btn-primary" (click)="onSubmit()">Request Review</button>
+  </div>
+</div>

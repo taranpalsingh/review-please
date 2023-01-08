@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form-control {
+  border-color: #DDDDDD !important;
+}
+.form-control, .form-control:active, .form-control:hover {
+  outline: none !important;
+}
+
+
+.mat-tab-group, .mat-tab-body-wrapper {
+  height: 90vh;
+}
+
+.btn-primary, .btn-primary:hover {
+  color: white;
+  background-color: #3375FF !important;
+  border-color: #3375FF !important;
+} 
+
+.mat-tab-label.mat-tab-label-active {
+  color: #3375FF;
+  font-weight: 700;
+}
+
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: #3375FF;
+}
+
+.success {
+  color: #189E4F;
+}
+
+.failure {
+  color: #D83F4C;
+}
+
+.hidden {
+  visibility: hidden;
+}
