@@ -11,6 +11,8 @@ import { SubCategory } from 'src/app/types/enums/sub-category';
 export class ReviewFormComponent implements OnDestroy {
 
   @Output() closeDialog = new EventEmitter();
+  @Output() formSubmitted = new EventEmitter();
+  
   selectedCategory: string;
   selectedSubCategory: string;
   title = '';
@@ -66,6 +68,7 @@ export class ReviewFormComponent implements OnDestroy {
     }
     console.log(newReviewRequest);
     alert('printed');
+    this.formSubmitted.emit(true);
   }
 
   onCancel() {

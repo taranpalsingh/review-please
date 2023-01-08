@@ -1,0 +1,10 @@
+<div class="suggested-reviewers">
+  <h3>Below are the suggested reviewers for your posted content.</h3>
+  <div class="reviewers-container row">
+    <app-reviewer-card 
+      class="col-md-4"
+      *ngFor="let reviewer of reviewers" 
+      [reviewer]="reviewer"
+    ></app-reviewer-card>
+  </div>
+</div>

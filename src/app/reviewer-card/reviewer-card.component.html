@@ -1,0 +1,25 @@
+<mat-card class="reviewer-card">
+  <mat-card-header>
+    <mat-card-title-group class="text-center">
+      <p class="rate">${{reviewer.rate}}/hr</p>
+      <img mat-card-sm-image src="{{assetsBaseUrl + reviewer.imageUrl}}" >
+      <p class="title">{{reviewer.name}}</p>
+      <p class="sub-title">{{reviewer.profile}}</p>
+      <p class="sub-title">{{reviewer.location}}</p>
+      
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content class="text-center">
+    
+    <div class="history-details">
+      
+      <p>{{reviewer.rating + '/5'}}</p>
+      <p class="jobs">({{reviewer.jobsCompleted}}) jobs</p>
+  
+    </div>
+    <p class="description">{{reviewer.description}}</p>
+    <div class="btn">
+      Ask for Review
+    </div>
+  </mat-card-content>
+</mat-card>

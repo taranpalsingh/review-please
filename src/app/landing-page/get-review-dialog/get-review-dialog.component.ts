@@ -11,6 +11,8 @@ import { DialogData } from '../landing-page.component';
 })
 export class GetReviewDialogComponent {
   
+  step = 2;
+
   // selectedCategory: string;
   // selectedSubCategory: string;
   // title = '';
@@ -62,14 +64,7 @@ export class GetReviewDialogComponent {
     this.dialogRef.close();
   }
 
-  // onSubmit() {
-  //   const newReviewRequest = {
-  //     category: this.selectedCategory,
-  //     subCategory: this.selectedSubCategory,
-  //     title: this.title,
-  //     description: this.description,
-  //   }
-  //   console.log(newReviewRequest);
-  //   alert('printed');
-  // }
+  formSubmitted() {
+    this.step = 2;
+  }
 }

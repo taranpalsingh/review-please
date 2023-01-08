@@ -19,7 +19,9 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
 import { ReviewFormComponent } from './landing-page/get-review-dialog/review-form/review-form.component';
-
+import { SuggestedReviewersComponent } from './landing-page/get-review-dialog/suggested-reviewers/suggested-reviewers.component';
+import { ReviewerCardComponent } from './reviewer-card/reviewer-card.component';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { ReviewFormComponent } from './landing-page/get-review-dialog/review-for
     LandingPageComponent,
     LoaderComponent,
     GetReviewDialogComponent,
-    ReviewFormComponent
+    ReviewFormComponent,
+    SuggestedReviewersComponent,
+    ReviewerCardComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ import { ReviewFormComponent } from './landing-page/get-review-dialog/review-for
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
