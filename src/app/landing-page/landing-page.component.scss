@@ -4,10 +4,20 @@
 }
 
 .background {
+  padding: 20px 10px;
   background-color: white;
-  width: 100%;
+  // width: 90%;
   height: 100%;
+  margin: auto;
   position: relative;
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 5vh;
+  }
+
 
   .btns {
     position: absolute;

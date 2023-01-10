@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PreAuthComponent } from './pre-auth.component';
+import { OpenRequestsComponent } from './open-requests.component';
 
-describe('PreAuthComponent', () => {
-  let component: PreAuthComponent;
-  let fixture: ComponentFixture<PreAuthComponent>;
+describe('OpenRequestsComponent', () => {
+  let component: OpenRequestsComponent;
+  let fixture: ComponentFixture<OpenRequestsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PreAuthComponent ]
+      declarations: [ OpenRequestsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PreAuthComponent);
+    fixture = TestBed.createComponent(OpenRequestsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

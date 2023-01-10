@@ -4,6 +4,14 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+$dark: var(--dark-color);
+$dark1: var(--dark1-color);
+$dark2: var(--dark2-color);
+$light: var(--light-color);
+$light1: var(--light1-color);
+$light2: var(--light2-color);
+$light3: var(--light3-color);
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -56,4 +64,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .mat-card-title-group, .mat-card-header {
   display: block !important;
+}
+
+.title .mat-form-field {
+  width: 80% !important;
+}
+
+.description .mat-form-field {
+  width: 100% !important;
+}
+
+.mat-card-header-text {
+  margin: 0 !important;
 }

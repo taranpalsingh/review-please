@@ -17,6 +17,8 @@ export class ReviewFormComponent implements OnDestroy {
   selectedSubCategory: string;
   title = '';
   description = '';
+  isPublic = false;
+  willingToPay = true;
 
   categories = [
     {value: Category.Document, viewValue: 'Document', disabled: false}, 
@@ -26,9 +28,7 @@ export class ReviewFormComponent implements OnDestroy {
 
   subCategories  = [];
 
-
   constructor() {}
-  
   
   categoryUpdated() {
     switch(this.selectedCategory) {
@@ -65,6 +65,8 @@ export class ReviewFormComponent implements OnDestroy {
       subCategory: this.selectedSubCategory,
       title: this.title,
       description: this.description,
+      timestamp: new Date(),
+      willingToPay: true, 
     }
     console.log(newReviewRequest);
     alert('printed');
@@ -78,4 +80,7 @@ export class ReviewFormComponent implements OnDestroy {
   ngOnDestroy() {
   }
 
+  onFileInput(ddw) {
+    alert('uploaded')
+  }
 }

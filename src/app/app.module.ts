@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PreAuthComponent } from './pre-auth/pre-auth.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,17 +21,24 @@ import { ReviewFormComponent } from './landing-page/get-review-dialog/review-for
 import { SuggestedReviewersComponent } from './landing-page/get-review-dialog/suggested-reviewers/suggested-reviewers.component';
 import { ReviewerCardComponent } from './reviewer-card/reviewer-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { OpenRequestsComponent } from './open-requests/open-requests.component';
+import { AdCardComponent } from './open-requests/ad-card/ad-card.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    PreAuthComponent,
     DropdownComponent,
     LandingPageComponent,
     LoaderComponent,
     GetReviewDialogComponent,
     ReviewFormComponent,
     SuggestedReviewersComponent,
-    ReviewerCardComponent
+    ReviewerCardComponent,
+    OpenRequestsComponent,
+    AdCardComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +55,8 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule,
     MatSelectModule,
     MatCardModule,
+    MatCheckboxModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

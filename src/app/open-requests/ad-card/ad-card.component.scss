@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+.card-container {
+  // margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $light;
+  }
+
+  .header, .content, .actions {
+    padding: 0 10px;
+  } 
+
+  .header {
+    padding-top: 10px;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: flex-start;
+
+    .tag {
+      padding: 5px 15px;
+      min-width: 20px;
+      background-color: $light1;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+  }
+
+  .time {
+    font-size: 11px;
+    margin-bottom: 5px;
+    opacity: 0.9;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+  
+  .location {
+    display: flex;
+    align-items: baseline;
+    opacity: 0.9;
+
+
+    img {
+      height: 15px;
+    }
+
+    p {
+      font-size: 12px;
+      margin-bottom: 5px;
+      margin-left: 4px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="open-requests container">
+  <div class="title-container">
+    <div class="title">Hey There!!!</div>
+    <div class="sub-title">Good Afternoon!!</div>  
+  </div>
+
+  <!-- <img src="../../assets/Images/title-banner.png" alt=""> -->
+
+  <div class="requests-container">
+    <p class="available-requests-title">These are all the ads available right now!!</p>
+    <app-ad-card 
+      *ngFor="let ad of ads"
+      [ad]="ad"
+    ></app-ad-card>
+  </div>
+</div>

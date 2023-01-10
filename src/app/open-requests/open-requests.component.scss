@@ -1,0 +1,58 @@
+@import '../../styles.scss';
+
+.open-requests {
+
+  margin-top: 100px;
+
+  .title-container {
+    width: 100%;
+    padding: 22px;
+    background: #967edd;
+    color: #fff;
+    // background-image: url(https://www.phonepe.com/webstatic/static/trust-banner-29acd63….png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 38px top -4px;
+    border-radius: 32px;
+    align-items: center;
+    // display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+    // border: 1px solid #d5e0d5;
+    border-radius: 26px;
+    padding: 50px;
+    margin-bottom: 40px;
+    background-image: url("../../assets/Images/title-banner.png");
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-weight: bold;
+    // color: $dark1;
+  }
+
+  .sub-title {
+    font-size: 22px;
+    margin-left: 0;
+    // margin-bottom: 30px;
+    // color: $dark1;
+  }
+
+  .available-requests-title {
+    margin: 26px;
+    font-size: 20px;
+  }
+
+  app-ad-card {
+    width: 100%;
+  }
+
+  .requests-container {
+    padding: 20px 0;
+    border: 1px solid #d5e0d5;
+    border-radius: 50px;
+  }
+}

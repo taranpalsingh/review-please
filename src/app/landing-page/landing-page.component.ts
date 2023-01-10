@@ -2,6 +2,7 @@ import {AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import { GetReviewDialogComponent } from './get-review-dialog/get-review-dialog.component';
+import { Router } from '@angular/router';
 
 export interface DialogData {
   animal: string;
@@ -16,7 +17,12 @@ export class LandingPageComponent implements OnDestroy {
   animal: string;
   name: string;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private router: Router
+  ) {
+    // this.openDialog();
+  }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(GetReviewDialogComponent, {
@@ -30,7 +36,7 @@ export class LandingPageComponent implements OnDestroy {
   }
 
   giveReview() {
-
+    this.router.navigateByUrl('/open-requests');
   }
 
   getReview() {

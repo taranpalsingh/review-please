@@ -11,54 +11,12 @@ import { DialogData } from '../landing-page.component';
 })
 export class GetReviewDialogComponent {
   
-  step = 2;
-
-  // selectedCategory: string;
-  // selectedSubCategory: string;
-  // title = '';
-  // description = '';
-
-  // categories = [
-  //   {value: 'Document', viewValue: 'Document', disabled: false}, 
-  //   {value: 'Art', viewValue: 'Art', disabled: false}, 
-  //   {value: 'Code', viewValue: 'Code', disabled: true}, 
-  // ];
-
-  // subCategories  = [];
+  step = 1;
 
   constructor(
     public dialogRef: MatDialogRef<GetReviewDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
   ) {}
-
-  // categoryUpdated() {
-  //   switch(this.selectedCategory) {
-  //     case Category.Document:
-  //       this.subCategories = [
-  //         {value: 'Resume', viewValue: 'Resume', disabled: false}, 
-  //         {value: 'CoverLetter', viewValue: 'Cover Letter', disabled: false}, 
-  //         {value: 'Legal', viewValue: 'Legal', disabled: false}, 
-  //         {value: 'Applications', viewValue: 'Applications', disabled: false}, 
-  //         {value: 'Other', viewValue: 'Other', disabled: false},
-  //       ]
-  //       break;
-  //     case Category.Art:
-  //       this.subCategories = [
-  //         {value: 'Photograph', viewValue: 'Photograph', disabled: false}, 
-  //         {value: 'Music', viewValue: 'Music', disabled: true}, 
-  //         {value: 'Dance', viewValue: 'Dance', disabled: true}, 
-  //       ]
-  //       break;
-  //     default:
-  //       this.subCategories = [
-  //         {value: 'Resume', viewValue: 'Resume', disabled: false}, 
-  //         {value: 'CoverLetter', viewValue: 'Cover Letter', disabled: false}, 
-  //         {value: 'Legal', viewValue: 'Legal', disabled: false}, 
-  //         {value: 'Applications', viewValue: 'Applications', disabled: false}, 
-  //         {value: 'Other', viewValue: 'Other', disabled: false},
-  //       ]
-  //   }
-  // }
 
   onCancel(): void {
     this.dialogRef.close();
