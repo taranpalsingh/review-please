@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fis-simulator": {
+    "review-please": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fis-simulator",
+            "outputPath": "dist/review-please",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -85,18 +85,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fis-simulator:build"
+            "browserTarget": "review-please:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fis-simulator:build:production"
+              "browserTarget": "review-please:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fis-simulator:build"
+            "browserTarget": "review-please:build"
           }
         },
         "test": {
@@ -134,16 +134,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fis-simulator:serve"
+            "devServerTarget": "review-please:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "fis-simulator:serve:production"
+              "devServerTarget": "review-please:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "fis-simulator"
+  "defaultProject": "review-please"
 }

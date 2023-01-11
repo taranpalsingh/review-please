@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'fis-simulator'`, () => {
+  it(`should have as title 'review-please'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fis-simulator');
+    expect(app.title).toEqual('review-please');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('fis-simulator app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('review-please app is running!');
   });
 });
