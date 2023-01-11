@@ -2,7 +2,7 @@
 <h1 mat-dialog-title *ngIf="step===2">Suggested Reviewers</h1>
 <div mat-dialog-content>
   <div *ngIf="step===1" class="step-1">
-    <app-review-form (closeDialog)="onCancel()" (formSubmitted)="formSubmitted()"></app-review-form>
+    <app-review-form (formSubmitted)="formSubmitted()"></app-review-form>
   </div>
   <div *ngIf="step===2" class="step-2">
     <app-suggested-reviewers></app-suggested-reviewers>

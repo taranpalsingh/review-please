@@ -9,12 +9,32 @@ export class AdCardComponent implements OnInit {
 
   @Input() ad;
   tags = [];
+  // time = '';
 
   constructor() { }
 
   ngOnInit(): void {
     this.addTags();
+    // this.calculateTime();
   }
+
+  // calculateTime() {
+  //   const endTime = new Date();
+  //   let timeDiff = endTime.getTime() - this.ad['timestamp'];
+    
+  //   timeDiff /= 1000;
+  
+  //   if (timeDiff <= 60) {
+  //     this.time = 'Just Now';
+  //   } else if (timeDiff < (24 * 60)) {
+  //     // hour
+  //     this.time = Math.ceil(timeDiff/60).toString(); 
+      
+  //   } 
+  //   // get seconds 
+  //   var seconds = Math.round(timeDiff);
+  //   console.log(seconds + " seconds");
+  // }
 
   addTags() {
 

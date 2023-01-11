@@ -12,13 +12,13 @@ import { LoaderComponent } from './loader/loader.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { GetReviewDialogComponent } from './landing-page/get-review-dialog/get-review-dialog.component';
+import { GetReviewComponent } from './landing-page/get-review/get-review.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
-import { ReviewFormComponent } from './landing-page/get-review-dialog/review-form/review-form.component';
-import { SuggestedReviewersComponent } from './landing-page/get-review-dialog/suggested-reviewers/suggested-reviewers.component';
+import { ReviewFormComponent } from './landing-page/get-review/review-form/review-form.component';
+import { SuggestedReviewersComponent } from './landing-page/get-review/suggested-reviewers/suggested-reviewers.component';
 import { ReviewerCardComponent } from './reviewer-card/reviewer-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { OpenRequestsComponent } from './open-requests/open-requests.component';
@@ -33,7 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
     DropdownComponent,
     LandingPageComponent,
     LoaderComponent,
-    GetReviewDialogComponent,
+    GetReviewComponent,
     ReviewFormComponent,
     SuggestedReviewersComponent,
     ReviewerCardComponent,

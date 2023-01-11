@@ -10,7 +10,7 @@ import { SubCategory } from 'src/app/types/enums/sub-category';
 })
 export class ReviewFormComponent implements OnDestroy {
 
-  @Output() closeDialog = new EventEmitter();
+  // @Output() closeDialog = new EventEmitter();
   @Output() formSubmitted = new EventEmitter();
   
   selectedCategory: string;
@@ -74,7 +74,7 @@ export class ReviewFormComponent implements OnDestroy {
   }
 
   onCancel() {
-    this.closeDialog.emit();
+    // this.closeDialog.emit();
   }
 
   ngOnDestroy() {

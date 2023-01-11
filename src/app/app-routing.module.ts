@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { GetReviewComponent } from './landing-page/get-review/get-review.component';
 import { OpenRequestsComponent } from './open-requests/open-requests.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent,
+    component: OpenRequestsComponent,
   },
   {
-    path: 'open-requests',
+    path: 'get-review',
+    component: GetReviewComponent,
+  },
+  {
+    path: '*',
     component: OpenRequestsComponent,
-  }
+  },
 ];
 
 @NgModule({

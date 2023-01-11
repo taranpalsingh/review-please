@@ -3,6 +3,7 @@ import { MatTabGroup } from '@angular/material/tabs';
 import { Constants } from './app.constants';
 import { ApiService } from './api.service';
 import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,8 @@ export class AppComponent implements AfterViewInit {
   
   constructor(
     private apiService: ApiService,
-    @Inject(DOCUMENT) private document: any
+    @Inject(DOCUMENT) private document: any,
+    private router: Router
   ) {
     document.documentElement.style.setProperty('--dark-color', this.darkColor);
     document.documentElement.style.setProperty('--dark1-color', this.dark1Color);
@@ -37,6 +39,16 @@ export class AppComponent implements AfterViewInit {
     document.documentElement.style.setProperty('--light2-color', this.light2Color);
     document.documentElement.style.setProperty('--light3-color', this.light3Color);
     this.apiService.API_URL = 'http://dev.tab.kitecash.in/simulator/fis/transaction';
+  }
+
+  
+  giveReview() {
+    this.router.navigateByUrl('');
+  }
+
+  getReview() {
+    this.router.navigateByUrl('/get-review');
+    // this.openDialog();
   }
 
   ngAfterViewInit() {

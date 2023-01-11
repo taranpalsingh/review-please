@@ -11,15 +11,15 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  preAuth(data) {
-    return this.http.post(this.API_URL + '/authorization', data);
-  }
+  // preAuth(data) {
+  //   return this.http.post(this.API_URL + '/authorization', data);
+  // }
 
-  postAuth(data) {
-    return this.http.post(this.API_URL + '/posting', data);
-  }
+  // postAuth(data) {
+  //   return this.http.post(this.API_URL + '/posting', data);
+  // }
 
-  reversal(data) {
-    return this.http.post(this.API_URL + '/reversal', data);
-  }
+  // reversal(data) {
+  //   return this.http.post(this.API_URL + '/reversal', data);
+  // }
 }

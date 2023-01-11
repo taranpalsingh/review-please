@@ -1,7 +1,6 @@
 import {AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationService } from '../navigation.service';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import { GetReviewDialogComponent } from './get-review-dialog/get-review-dialog.component';
 import { Router } from '@angular/router';
 
 export interface DialogData {
@@ -24,24 +23,24 @@ export class LandingPageComponent implements OnDestroy {
     // this.openDialog();
   }
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(GetReviewDialogComponent, {
-      data: {animal: this.animal},
-    });
+  // openDialog(): void {
+  //   const dialogRef = this.dialog.open(GetReviewDialogComponent, {
+  //     data: {animal: this.animal},
+  //   });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.animal = result;
-    });
-  }
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('The dialog was closed');
+  //     this.animal = result;
+  //   });
+  // }
 
-  giveReview() {
-    this.router.navigateByUrl('/open-requests');
-  }
+  // giveReview() {
+  //   this.router.navigateByUrl('/open-requests');
+  // }
 
-  getReview() {
-    this.openDialog();
-  }
+  // getReview() {
+  //   this.openDialog();
+  // }
 
   ngOnDestroy() {
     // this.subscription.unsubscribe();

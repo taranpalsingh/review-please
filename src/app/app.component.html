@@ -1,10 +1,23 @@
 <!-- <div class="app">
   
 </div> -->
-<app-loader></app-loader>
+<!-- <app-loader></app-loader> -->
 <!-- <div class="tabs">
     <pre-auth></pre-auth>
 </div> -->
 
-<!-- <header></header> -->
-<router-outlet></router-outlet>
+<div class="app-container">
+    <div class="header">
+        <!-- <div class="title">
+            <img class="logo" src="../assets/Images/logo.PNG" alt="">
+        </div> -->
+        <h2 class="title">Review Please</h2>
+        <div class="tabs">
+            <p class="tab-item get-review" (click)="getReview()">Get Review</p>
+            <p class="tab-item give-review" (click)="giveReview()">Give Review</p>
+        </div>
+    </div>
+    <div class="divider"></div>    
+    <!-- <header></header> -->
+    <router-outlet></router-outlet>    
+</div>
