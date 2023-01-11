@@ -15,7 +15,8 @@ export class AppComponent implements AfterViewInit {
   
   darkColor = '#6026a8';
   dark1Color = '#5c21a6';
-  dark2Color = '#7557b8';
+  dark2Color = '#6739b7'
+  dark3Color = '#7557b8';
   light3Color = '#967edd';
   light2Color = '#c3b9f8';
   light1Color = '#e8e5fc';

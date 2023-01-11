@@ -5,7 +5,7 @@ import { OpenRequestsComponent } from './open-requests/open-requests.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'give-review',
     component: OpenRequestsComponent,
   },
   {
@@ -14,6 +14,10 @@ const routes: Routes = [
   },
   {
     path: '*',
+    component: OpenRequestsComponent,
+  },
+  {
+    path: '',
     component: OpenRequestsComponent,
   },
 ];

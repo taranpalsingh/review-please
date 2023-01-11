@@ -29,10 +29,15 @@
       font-size: 18px;
       // font-weight: bold;
       // color: black;
+      color: $dark2;
 
       &:hover {
-        background-color: $light2;
+        background-color: $light1;
+      }
 
+      &.active-link {
+        background-color: $light1;
+        font-weight: bold;
       }
     }
   }

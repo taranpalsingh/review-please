@@ -3,6 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+body::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
 
 $dark: var(--dark-color);
 $dark1: var(--dark1-color);
