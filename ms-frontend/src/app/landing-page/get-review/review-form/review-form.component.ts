@@ -69,7 +69,6 @@ export class ReviewFormComponent implements OnDestroy {
       willingToPay: true, 
     }
     console.log(newReviewRequest);
-    alert('printed');
     this.formSubmitted.emit(true);
   }
 
@@ -81,6 +80,5 @@ export class ReviewFormComponent implements OnDestroy {
   }
 
   onFileInput(ddw) {
-    alert('uploaded')
   }
 }

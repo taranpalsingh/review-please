@@ -3,12 +3,26 @@
     <div class="title">Hey There!!!</div>
     <div class="sub-title">Good Afternoon!!</div>  
   </div>
+  <div class="search-container">
+    <img src="../../assets/Images/Search.png" class="search">
+    <input
+      (keyup)="applyFilter()"
+      placeholder="Search for available reviews here"
+      [(ngModel)]="searchString">
+  </div>
 
-  <div class="requests-container">
-    <p class="available-requests-title">These are all the ads available right now!!</p>
-    <app-ad-card 
-      *ngFor="let ad of ads"
-      [ad]="ad"
-    ></app-ad-card>
+  <div class="available-count">
+    {{filteredAds.length}} Pending Reviews Available
+  </div>
+
+  <div class="content">
+    <div class="requests-container">
+      <!-- <p class="available-requests-title">These are all the ads available right now!!</p> -->
+      <app-ad-card 
+        *ngFor="let ad of filteredAds"
+        [ad]="ad"
+      ></app-ad-card>
+    </div>
+    <app-filters class="filters"></app-filters>
   </div>
 </div>

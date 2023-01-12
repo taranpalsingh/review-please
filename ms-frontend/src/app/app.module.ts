@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DropdownComponent } from './dropdown/dropdown.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './loader/loader.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -25,12 +24,14 @@ import { OpenRequestsComponent } from './open-requests/open-requests.component';
 import { AdCardComponent } from './open-requests/ad-card/ad-card.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { FiltersComponent } from './open-requests/filters/filters.component';
+import { ReviewersComponent } from './reviewers/reviewers.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DropdownComponent,
     LandingPageComponent,
     LoaderComponent,
     GetReviewComponent,
@@ -38,7 +39,9 @@ import { MatIconModule } from '@angular/material/icon';
     SuggestedReviewersComponent,
     ReviewerCardComponent,
     OpenRequestsComponent,
-    AdCardComponent
+    AdCardComponent,
+    FiltersComponent,
+    ReviewersComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +60,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatCheckboxModule,
     MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

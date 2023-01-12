@@ -1,6 +1,6 @@
 <div class="container">
-  <h1 mat-dialog-title *ngIf="step===1">Post your content</h1>
-  <h1 mat-dialog-title *ngIf="step===2">Suggested Reviewers</h1>
+  <h1 mat-dialog-title *ngIf="step===1" class="title">Post your content</h1>
+  <h1 mat-dialog-title *ngIf="step===2" class="title">Suggested Reviewers</h1>
   <div mat-dialog-content>
     <div *ngIf="step===1" class="step-1">
       <app-review-form (formSubmitted)="formSubmitted()"></app-review-form>

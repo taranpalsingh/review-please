@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpenRequestsComponent implements OnInit {
 
+  searchString = '';
+
   ads = [
     {
       category: 'Document', 
@@ -17,10 +19,11 @@ export class OpenRequestsComponent implements OnInit {
       willingToPay: true,
       timestamp: ' Just Now',
       
-    },  {
+    },  
+    {
       category: 'Document', 
-      subCategory: 'Resume', 
-      title: 'Resume review for IT Jobs ', 
+      subCategory: 'Legal', 
+      title: 'Legal review for Job Offer Letter', 
       description: 'I needI need help dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam with sdnjwdnwmdI need help with sdnjwdnwmd help with sdnjwdnwmd',
       location: 'ON, Canada',
       willingToPay: true,
@@ -73,9 +76,28 @@ export class OpenRequestsComponent implements OnInit {
     },
   ]
 
+  filteredAds;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.applyFilter();
+  }
+
+  applyFilter() {
+    
+    this.filteredAds = this.ads;
+
+    if (!this.searchString)
+      return;
+
+    this.filteredAds = this.ads.filter(ad => {
+      for (let key of Object.keys(ad)) {
+        if (ad[key].toString().toLowerCase().includes(this.searchString.toLowerCase())) {
+          return ad;
+        }
+      }
+    })
   }
 
 }

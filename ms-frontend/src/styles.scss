@@ -81,3 +81,34 @@ input[type=number]::-webkit-outer-spin-button {
 .mat-card-header-text {
   margin: 0 !important;
 }
+
+
+// .mat-flat-button.mat-success {
+//   color: #f0fff3 !important;
+//   background-color: #155724 !important;
+// }
+
+
+.button {
+  // background-color: $light3;
+  background-color: $dark2;
+  min-width: 60px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+::ng-deep .mat-checkbox-checked .mat-checkbox-background, 
+.mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: $dark2 !important;
+}
+
+// overwrite the ripple overlay on hover and click
+::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
+  background-color: $dark2 !important;
+}

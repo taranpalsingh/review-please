@@ -1,0 +1,17 @@
+@import '../../../styles.scss';
+
+.filters {
+  padding: 25px;
+  height: 100%;
+
+  .title {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+
+  .checkbox {
+    display: block;
+  }
+
+}

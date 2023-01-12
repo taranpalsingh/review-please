@@ -1,0 +1,13 @@
+<div class="filters">
+  <p class="title">Filters</p>
+  <div class="divider"></div>
+  <div class="category-filters">
+    <mat-checkbox class="checkbox" (click)="updateCategory('Resume')" [(ngModel)]="Resume">Resume</mat-checkbox>
+    <mat-checkbox class="checkbox" (click)="updateCategory('Legal')" [(ngModel)]="Legal">Legal</mat-checkbox>
+    <mat-checkbox class="checkbox" (click)="updateCategory('CoverLetter')" [(ngModel)]="CoverLetter">Cover Letter</mat-checkbox>
+    <mat-checkbox class="checkbox" (click)="updateCategory('Applications')" [(ngModel)]="Applications">Educational Applications</mat-checkbox>
+    <mat-checkbox class="checkbox" (click)="updateCategory('Other')" [(ngModel)]="Other">Other</mat-checkbox>
+    <mat-checkbox class="checkbox" (click)="updateCategory('Photograph')" [(ngModel)]="Photograph">Photograph</mat-checkbox>
+
+  </div>
+</div>

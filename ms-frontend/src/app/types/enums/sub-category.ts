@@ -3,7 +3,7 @@ export enum SubCategory {
   Resume = 'Resume',
   CoverLetter = 'Cover Letter',
   Legal = 'Legal',
-  Applications = 'Applications',
+  Applications = 'Educational Applications',
   Other = 'Other',
   // Art
   Photograph = 'Photograph',
