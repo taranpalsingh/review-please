@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FiltersComponent implements OnInit {
 
   Resume = true;
-  Legal = false;
+  Legal = true;
   CoverLetter = false;
-  Applications = false;
+  Applications = true;
   Other = false;
   Photograph = false;
 

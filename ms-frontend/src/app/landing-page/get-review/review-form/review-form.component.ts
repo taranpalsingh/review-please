@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, EventEmitter, OnDestroy, Output } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { RequestsService } from 'src/app/requests.service';
 import { Category } from 'src/app/types/enums/category.enum';
 import { SubCategory } from 'src/app/types/enums/sub-category';
 
@@ -28,7 +29,9 @@ export class ReviewFormComponent implements OnDestroy {
 
   subCategories  = [];
 
-  constructor() {}
+  constructor(
+    public service: RequestsService
+  ) {}
   
   categoryUpdated() {
     switch(this.selectedCategory) {
@@ -68,7 +71,9 @@ export class ReviewFormComponent implements OnDestroy {
       timestamp: new Date(),
       willingToPay: true, 
     }
+
     console.log(newReviewRequest);
+    this.service.addRequest(newReviewRequest);
     this.formSubmitted.emit(true);
   }
 
