@@ -10,18 +10,17 @@ export class RequestsService {
     {
       category: 'Document', 
       subCategory: 'Resume', 
-      title: 'Resume review for IT Jobsddddddddd ', 
-      description: 'I need help with sdnjwdnwmd Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Verita',
+      title: 'Resume review for IT Job', 
+      description: 'I need help with Cover Letter for my dream job at Microsoft. I have given multiple interviews but I believe that I need to give better impression by my resume.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' Just Now',
-      
     },  
     {
       category: 'Document', 
       subCategory: 'Legal', 
       title: 'Legal review for Job Offer Letter', 
-      description: 'I needI need help dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam with sdnjwdnwmdI need help with sdnjwdnwmd help with sdnjwdnwmd',
+      description: 'I need someone to go through my offer letter once and let me know if there is any loophole that I am missing here. It is an offer letter for the role of Consultant for a small startup based in Greece. I just want to double check if it is in my best interests or not.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 2 hours ago',
@@ -30,16 +29,16 @@ export class RequestsService {
       category: 'Document', 
       subCategory: 'Resume', 
       title: 'Resume review for IT Jobs ', 
-      description: 'I need help with sdnjwdnwmd dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam  dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam',
+      description: 'I need help with Cover Letter for my dream job at Microsoft. I have given multiple interviews but I believe that I need to give better impression by my resume.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 2 hours ago'
     },
     {
       category: 'Document', 
-      subCategory: 'Resume', 
-      title: 'Resume review for IT Jobs ', 
-      description: 'I need help with sdnjwdnwmd  dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi  dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquamrepudiandae consequuntur voluptatum laborum numquam',
+      subCategory: 'Legal', 
+      title: 'Legal document review for Contract', 
+      description: 'I need someone to go through my offer letter once and let me know if there is any loophole that I am missing here. It is an offer letter for the role of Consultant for a small startup based in Greece. I just want to double check if it is in my best interests or not.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 1 day ago'
@@ -47,17 +46,17 @@ export class RequestsService {
     {
       category: 'Document', 
       subCategory: 'Resume', 
-      title: 'Resume review for IT Jobs ', 
-      description: 'I need help with sd dolor sit amet consectetur  dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquamadipisicing elit. Maxime molestiae quas vel sint commodi repudiandae ',
+      title: 'Resume review for Mechanical Jobs', 
+      description: 'I need help with Cover Letter for my dream job at Microsoft. I have given multiple interviews but I believe that I need to give better impression by my resume.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 2 days ago'
     },
     {
       category: 'Document', 
-      subCategory: 'Resume', 
-      title: 'Resume review for IT Jobs ', 
-      description: 'I need help wit  dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam dolor sit amet consectetur adipisicing elit. Maxime molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam h sdnjwdnwmd',
+      subCategory: 'Legal', 
+      title: 'Legal document review for Contract', 
+      description: 'I need someone to go through my offer letter once and let me know if there is any loophole that I am missing here. It is an offer letter for the role of Consultant for a small startup based in Greece. I just want to double check if it is in my best interests or not.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 5 days ago'
@@ -65,8 +64,8 @@ export class RequestsService {
     {
       category: 'Document', 
       subCategory: 'Resume', 
-      title: 'Resume review for IT Jobs ', 
-      description: 'I need help with sdnjwdnwmd',
+      title: 'Resume review for Management Jobs', 
+      description: 'I need help with Cover Letter for my dream job at Microsoft. I have given multiple interviews but I believe that I need to give better impression by my resume.',
       location: 'ON, Canada',
       willingToPay: true,
       timestamp: ' 6 days ago'

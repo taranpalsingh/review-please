@@ -37,14 +37,13 @@ export class AdCardComponent implements OnInit {
   // }
 
   addTags() {
+    if (this.ad['category'])
+      this.tags.push(this.ad['category']);
+    
+    if (this.ad['subCategory'])
+      this.tags.push(this.ad['subCategory']);
 
     (this.ad['willingToPay']) ? this.tags.push('Paid'): this.tags.push('Unpaid')
-
-    if (this.ad['category'])
-      this.tags.push(this.ad['category'])
-      
-    if (this.ad['subCategory'])
-      this.tags.push(this.ad['subCategory'])
   }
 
 }
